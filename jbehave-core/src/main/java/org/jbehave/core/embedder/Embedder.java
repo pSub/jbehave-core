@@ -205,7 +205,7 @@ public class Embedder {
         try {
 
             // set up run context
-            StoryManager storyManager = storyManager();
+            StoryManager storyManager = createStoryManager();
             MetaFilter filter = metaFilter();
             BatchFailures failures = new BatchFailures(embedderControls.verboseFailures());
 
